@@ -1,13 +1,128 @@
-<html>
-
+<!DOCTYPE html>
+<html lang="es" class="dark">
 <head>
-  <title>Express</title>
-  <link rel="stylesheet" href="/stylesheets/style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Apertek</title>
+  <link rel="stylesheet" href="stylesheets/color/light.css">
+  <link rel="stylesheet" href="stylesheets/color/dark.css">
+  <link rel="stylesheet" href="stylesheets/style.css">
+  <link rel="stylesheet" href="stylesheets/style_text.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+  <script defer src="javascripts/index.js"></script>
 </head>
-
 <body>
-  <h1>Express</h1>
-  <p>Welcome to Express</p>
-</body>
 
+<!-- Navbar -->
+<header>
+  <img src="images/Logo_A-C-S.svg" alt="Logo Apertek" class="logo">
+  <nav>
+    <ul class="nav-links">
+      <li><a href="#inicio">Inicio</a></li>
+      <li><a href="#nosotros">Nosotros</a></li>
+      <li><a href="#proyectos">Proyectos</a></li>
+      <li><a href="#contacto">Contacto</a></li>
+    </ul>
+    <div class="hamburguer-menu">&#9776;</div>
+  </nav>
+</header>
+
+<!-- Sección Inicio -->
+<!-- TODO Hacer un slider con las imágenes de los proyectos -->
+<section id="inicio" class="inicio">
+  <img src="images/Logo_A-C.svg" alt="Logo Apertek" class="logo-big">
+  <div class="inicio-text">
+    <h1 class="titulo">Innovando lo establecido</h1>
+    <a href="#contacto" class="btn-big">Contáctanos</a>
+  </div>
+</section>
+
+<!-- Sección Nosotros -->
+<!-- TODO Agregar imagenes -->
+<section id="nosotros" class="about">
+  <h2 class="subtitulo">Sobre Nosotros</h2>
+  <div class="cards-flex">
+    <div class="card">
+      <h3>Misión</h3>
+      <p>Desarrollar tecnológicas innovadoras que re imaginen la forma en que vivimos actualmente y nos lleven a un futuro más prometedor.</p>
+    </div>
+    <div class="card">
+      <h3>Visión</h3>
+      <p>Desarrollar las tecnologías mas innovadoras a nivel mundial.</p>
+    </div>
+    <div class="card">
+      <p>
+        En APERTEK, la innovación no tiene límites, y creemos que la tecnología puede ser una fuerza poderosa para crear un futuro mejor para todas las personas.
+      </p>
+    </div>
+  </div>
+</section>
+
+<!-- Sección Nuestro equipo -->
+<!-- TODO Hacer cards del equipo -->
+<section id="nuestro equipo" class="about">
+  <h2 class="subtitulo">Nuestro Equipo</h2>
+  <div class="cards-flex">
+    <div class="card">
+      <h3>Nombre 1</h3>
+      <p></p>
+    </div>
+    <div class="card">
+      <h3>Nombre 2</h3>
+      <p></p>
+    </div>
+
+  </div>
+</section>
+
+<!-- Sección Proyectos -->
+<!-- TODO Hacer cartas giratorias con links descripcion y logos -->
+<section id="proyectos" class="services">
+  <h2 class="subtitulo">Nuestros Proyectos</h2>
+  <div class="cards-flex">
+    <div class="project">
+      <h3>EraserBot</h3>
+      <p></p>
+    </div>
+    <div class="project">
+      <h3>XtrackMachine</h3>
+      <p></p>
+    </div>
+  </div>
+</section>
+
+<!-- Sección Contacto -->
+<section id="contacto" class="contact">
+  <h2 class="subtitulo">Recibir actualizaciones de nuestros proyectos</h2>
+  <div class="form_container">
+    <form class="contact_form">
+      <div class="form_input-container">
+        <input type="email" placeholder="mail@example.com">
+      </div>
+      <div class="form_input-container">
+        <input type="submit">
+      </div>
+    </form>
+  </div>
+</section>
+
+<!--Footer-->
+<footer class="footer on-background text-background">
+  <p class="derechos_reservados body-small">
+    © 2024 Apertek. All rights reserved
+  </p>
+  <ul class="navbar-footer body-small">
+    <li>Inicio</li>
+    <li>Nosotros</li>
+    <li>Proyectos</li>
+    <li>Contacto</li>
+  </ul>
+  <div class="logo-footer">
+    <img src="images/Logo_A-W-S.svg" alt="Logo Apertek" class="logo">
+  </div>
+</footer>
+
+</body>
 </html>
