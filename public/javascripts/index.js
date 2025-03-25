@@ -2,6 +2,7 @@ document.addEventListener("DOMContentLoaded", function () {
     const menuIcon = document.querySelector(".hamburguer-menu");
     const navLinks = document.querySelector(".nav-links");
 
+    // TODO revisar por que se desaparecen los enlaces en navbar al hacer clic en pantalla grande
     menuIcon.addEventListener("click", function () {
         if (navLinks.classList.contains("show-menu")) {
             navLinks.classList.remove("show-menu");
