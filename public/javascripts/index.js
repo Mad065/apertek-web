@@ -20,14 +20,16 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 
     // Ocultar menú al hacer clic en un enlace
-    document.querySelectorAll(".nav-links a").forEach(link => {
-        link.addEventListener("click", function () {
-            navLinks.classList.remove("show-menu");
-            navLinks.classList.add("hide-menu");
+    if (menuIcon.getPropertyValue("display") === "block") {
+        document.querySelectorAll(".nav-links a").forEach(link => {
+            link.addEventListener("click", function () {
+                navLinks.classList.remove("show-menu");
+                navLinks.classList.add("hide-menu");
 
-            setTimeout(() => {
-                navLinks.style.visibility = "hidden";
-            }, 500);
+                setTimeout(() => {
+                    navLinks.style.visibility = "hidden";
+                }, 500);
+            });
         });
-    });
+    }
 });
