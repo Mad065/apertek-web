@@ -2,7 +2,6 @@ document.addEventListener("DOMContentLoaded", function () {
     const menuIcon = document.querySelector(".hamburguer-menu");
     const navLinks = document.querySelector(".nav-links");
 
-    // TODO revisar por que se desaparecen los enlaces en navbar al hacer clic en pantalla grande
     menuIcon.addEventListener("click", function () {
         if (navLinks.classList.contains("show-menu")) {
             navLinks.classList.remove("show-menu");
@@ -20,16 +19,18 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 
     // Ocultar menú al hacer clic en un enlace
-    if (menuIcon.getPropertyValue("display") === "block") {
-        document.querySelectorAll(".nav-links a").forEach(link => {
-            link.addEventListener("click", function () {
+    document.querySelectorAll(".nav-links a").forEach(link => {
+        link.addEventListener("click", function () {
+            // Verificar si el icono del menú está visible
+            const displayValue = window.getComputedStyle(menuIcon).getPropertyValue("display");
+            if (displayValue === "block") {
                 navLinks.classList.remove("show-menu");
                 navLinks.classList.add("hide-menu");
 
                 setTimeout(() => {
                     navLinks.style.visibility = "hidden";
                 }, 500);
-            });
+            }
         });
-    }
+    });
 });
