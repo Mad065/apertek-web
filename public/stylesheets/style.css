@@ -28,6 +28,11 @@ header {
   animation: slideInFromTop 0.8s ease-out;
 }
 
+.menu-container {
+  display: flex;
+  align-items: center;
+}
+
 .logo {
   height: 64px;
 }
@@ -46,10 +51,49 @@ header {
   text-decoration: none;
 }
 
-.hamburguer-menu {
-  display: none;
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: -250px;
+  width: 200px;
+  height: 100%;
+  background: var(--md-sys-color-secondary-container);
+  box-shadow: 2px 0 5px var(--md-sys-color-on-secondary);
+  transition: left 0.3s ease-in-out;
+  padding-top: 24px;
+  z-index: 200;
+}
+
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+  text-align: left;
+}
+
+.sidebar li {
+  padding: 15px;
+  border-bottom: 1px solid var(--md-sys-color-on-secondary-container);
+}
+
+.sidebar a {
+  color: var(--md-sys-color-on-secondary-container);
+  text-decoration: none;
+  display: block;
+}
+
+.close-menu {
+  font-size: 2rem;
+  color: var(--md-sys-color-on-secondary-container);
+  text-align: right;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+.icon_menu {
   font-size: 2rem;
   cursor: pointer;
+  display: none;
+  margin-right: 12px;
 }
 
 /* Sección Inicio */
@@ -353,8 +397,9 @@ header {
 .social_feed-container {
   display: flex;
   flex-direction: row;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
+  flex-wrap: wrap;
   gap: 1rem;
 }
 
@@ -445,45 +490,15 @@ header {
   }
 
   .nav-links {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    position: absolute;
-    top: 80px;
-    left: 0;
-    background: var(--md-sys-color-secondary-container);
-    width: 100%;
-    height: calc(100dvh - 80px);
-    text-align: center;
-    transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out;
-    transform: translateY(-100%);
-    opacity: 0;
-    visibility: hidden;
+    display: none;
   }
 
-  .nav-links.show-menu {
-    animation: slideInFromTop 0.5s forwards;
-    visibility: visible;
-  }
-
-  .nav-links.hide-menu {
-    animation: slideOutToTop 0.5s forwards;
-  }
-
-  .nav-links li {
-    width: 100%;
-    padding: 1.5rem;
-    font-size: 2rem;
-    border-bottom: 1px solid var(--md-sys-color-on-secondary-container);
-  }
-
-  .nav-links li a {
-    color: var(--md-sys-color-on-secondary-container);
-  }
-
-  .hamburguer-menu {
+  .icon_menu {
     display: block;
+  }
+
+  .sidebar.show {
+    left: 0;
   }
 
   .footer {

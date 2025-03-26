@@ -17,20 +17,33 @@
 <body>
 
 <!-- Navbar -->
-<!-- TODO cambiar sidebar menu -->
 <header>
-  <img src="images/Logo_A-C-S.svg" alt="Logo Apertek" class="logo">
+  <div class="menu-container">
+    <div class="icon_menu">&#9776;</div>
+    <img src="images/Logo_A-C-S.svg" alt="Logo Apertek" class="logo">
+  </div>
   <nav>
     <ul class="nav-links">
       <li><a href="#inicio">Inicio</a></li>
       <li><a href="#nosotros">Nosotros</a></li>
-      <li><a href="#nuestro equipo">Nuestro equipo</a></li>
+      <li><a href="#nuestro_equipo">Nuestro equipo</a></li>
       <li><a href="#proyectos">Proyectos</a></li>
-      <li><a href="#redes sociales">Redes sociales</a></li>
+      <li><a href="#redes_sociales">Redes sociales</a></li>
     </ul>
-    <div class="hamburguer-menu">&#9776;</div>
   </nav>
 </header>
+
+<!-- Sidebar para móviles -->
+<div class="sidebar">
+  <div class="close-menu">&times;</div>
+  <ul>
+    <li><a href="#inicio">Inicio</a></li>
+    <li><a href="#nosotros">Nosotros</a></li>
+    <li><a href="#nuestro_equipo">Nuestro equipo</a></li>
+    <li><a href="#proyectos">Proyectos</a></li>
+    <li><a href="#redes_sociales">Redes sociales</a></li>
+  </ul>
+</div>
 
 <!-- Sección Inicio -->
 <!-- TODO Hacer un slider con las imágenes de los proyectos -->
@@ -38,7 +51,8 @@
   <img src="images/Logo_A-W.svg" alt="Logo Apertek" class="logo-big">
   <div class="inicio-text">
     <h1 class="titulo">Innovando lo establecido</h1>
-    <a href="#actualizaciones" class="btn-big">Contáctanos</a>
+    <!-- TODO Poner correo  -->
+    <a href="" class="btn-big">Contáctanos</a>
   </div>
 </section>
 
@@ -70,7 +84,7 @@
 
 <!-- Sección Nuestro equipo -->
 <!-- TODO Agregar links y descripcion a cards del equipo -->
-<section id="nuestro equipo" class="section">
+<section id="nuestro_equipo" class="section">
   <h2 class="subtitulo">Nuestro Equipo</h2>
   <div class="cards-flex">
 
@@ -247,9 +261,9 @@
   </div>
 </section>
 
-<!-- Sección Contacto -->
-<!-- TODO Eliminar y poner novedades de redes socsiales usar escom como ejemplo -->
-<section id="redes sociales" class="section">
+<!-- Sección Redes sociales -->
+<!-- TODO Poner redes sociales -->
+<section id="redes_sociales" class="section">
   <div class="social_feed-container">
     <div class="social_feed">
       <iframe src="" frameborder="0"></iframe>
